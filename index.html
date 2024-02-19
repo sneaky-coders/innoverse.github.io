@@ -1,45 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Innoverse 2K24</title>
-    <meta name="robots" content="noindex, follow">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/innoverse2.png">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/logo/innoverse2.png"
+    />
 
     <!-- CSS
 	============================================ -->
 
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/all.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/flaticon.css">
+    <link rel="stylesheet" href="assets/css/plugins/all.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/flaticon.css" />
 
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/plugins/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/gijgo.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/plugins/lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/gijgo.min.css" />
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
     <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css"> -->
-<style>
-    body {
+    <style>
+      body {
         margin: 0;
-    }
-    
-    
-    .snowflakes {
+      }
+
+      .snowflakes {
         position: fixed;
         top: 0;
         left: 0;
@@ -48,400 +52,513 @@
         height: 100%;
         z-index: 1;
         overflow: hidden; /* Keep overflow property here */
-    }
-    
-    .snowflake {
+      }
+
+      .snowflake {
         position: absolute;
         width: 10px;
         height: 10px;
         background-color: #fff;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         animation: fall linear infinite;
-    }
-    
-    @keyframes fall {
+      }
+
+      @keyframes fall {
         0% {
-            transform: translateY(-100vh);
-            opacity: 0;
+          transform: translateY(-100vh);
+          opacity: 0;
         }
         50% {
-            opacity: 1;
+          opacity: 1;
         }
         100% {
-            transform: translateY(100vh);
-            opacity: 0;
+          transform: translateY(100vh);
+          opacity: 0;
         }
-    }
+      }
 
-        /* Styles for the scrollbar */
-        ::-webkit-scrollbar {
+      /* Styles for the scrollbar */
+      ::-webkit-scrollbar {
         width: 10px;
-    }
+      }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
+      /* Track */
+      ::-webkit-scrollbar-track {
         background: #f1f1f1;
         border-radius: 5px;
-    }
+      }
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
         background: #888;
         border-radius: 5px;
-    }
+      }
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
         background: #555;
-    }
+      }
 
-    /* Styling for the preloader container */
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff; /* Background color for preloader */
-    z-index: 9999; /* Ensure preloader is on top of other content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+      /* Styling for the preloader container */
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff; /* Background color for preloader */
+        z-index: 9999; /* Ensure preloader is on top of other content */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-/* Styling for the preloader image */
-.preloader img {
-    width: 100px; /* Adjust the size of the image as needed */
-    height: auto; /* Maintain aspect ratio */
-    animation: pulse 1.5s ease-in-out infinite alternate; /* Apply the pulse animation */
-}
+      /* Styling for the preloader image */
+      .preloader img {
+        width: 100px; /* Adjust the size of the image as needed */
+        height: auto; /* Maintain aspect ratio */
+        animation: pulse 1.5s ease-in-out infinite alternate; /* Apply the pulse animation */
+      }
 
-/* Keyframe animation for the pulse effect */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.2);
-    }
-}
+      /* Keyframe animation for the pulse effect */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.2);
+        }
+      }
 
-    
-</style>
-</head>
+      /* The Modal (background) */
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
 
-<body>
+      /* Modal Content */
+      .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 30px;
+        border-radius: 8px;
+        max-width: 500px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
 
+      /* Close Button */
+      /* Close Button */
+      .close {
+        color: #aaa;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 600px) {
+        /* Adjust close button size for smaller screens */
+        .close {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="main-wrapper">
-
-
-        <!-- Preloader start -->
-        <div id="preloader">
-            <div class="preloader">
-                <img src="assets/images/logo/innoverse2.png" alt="Loading...">
-            </div>
+      <!-- Preloader start -->
+      <div id="preloader">
+        <div class="preloader">
+          <img src="assets/images/logo/innoverse2.png" alt="Loading..." />
         </div>
-        
-        <!-- Preloader End -->
+      </div>
 
-        <!-- Header Start  -->
-        <div id="header" class="section exvent-header-section">
-          
+      <!-- Preloader End -->
 
-            <div class="container">
-
-                <!-- Header Wrap Start  -->
-                <div class="header-wrap">
-
-                    <div class="header-logo">
-                        <a href="index.html"><img src="assets/images/logo/innoverse2.png" height="150px" width="auto" alt=""></a>
-                    </div>
-                    
-
-                    <div class="header-menu d-none d-lg-block">
-                        <ul class="main-menu">
-                            <li class="active-menu">
-                                <a href="index.html">Home</a>
-                                
-                            </li>
-                            <li>
-                                <a href="#">About Us</a>
-                            </li>
-
-                            <li>
-                                <a href="rules.html">Rules</a>
-                            </li>
-
-                          
-                            <li>
-                                <a href="#">Brochure</a>
-                            </li>
-
-                            <li>
-                                <a href="team.html">Our Team</a>
-                            </li>
-                           
-                           
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Header Meta Start -->
-                    <div class="header-meta">
-                        <!-- Header Search Start -->
-                    
-                        <!-- Header Search End -->
-                        <!-- Header Cart Start -->
-                        <div class="header-cart dropdown">
-                         
-                            <!-- Header Dropdown Cart Start -->
-                            <div class="dropdown-menu dropdown-cart slideIn">
-                                <!-- Dropdown Cart Items Start -->
-                                <div class="cart-items">
-                                    <!-- Single Cart Item Start -->
-                                    <div class="single-cart-item">
-                                        <div class="item-image">
-                                            <img src="assets/images/cart/cart-1.jpg" alt="cart">
-                                        </div>
-                                        <div class="item-content">
-                                            <h4 class="title"><a href="pricing.html">Apple Iphone X</a></h4>
-                                            <span class="quantity">2 x $59.99</span>
-                                        </div>
-                                        <button class="btn-close"></button>
-                                    </div>
-                                    <!-- Single Cart Item End -->
-                                    <!-- Single Cart Item Start -->
-                                    <div class="single-cart-item">
-                                        <div class="item-image">
-                                            <img src="assets/images/cart/cart-2.jpg" alt="cart">
-                                        </div>
-                                        <div class="item-content">
-                                            <h4 class="title"><a href="pricing.html">Sony Xperia Tablet</a></h4>
-                                            <span class="quantity">2 x $59.99</span>
-                                        </div>
-                                        <button class="btn-close"></button>
-                                    </div>
-                                    <!-- Single Cart Item End -->
-                                    <!-- Single Cart Item Start -->
-                                    <div class="single-cart-item">
-                                        <div class="item-image">
-                                            <img src="assets/images/cart/cart-3.jpg" alt="cart">
-                                        </div>
-                                        <div class="item-content">
-                                            <h4 class="title"><a href="pricing.html">Camera Digital</a></h4>
-                                            <span class="quantity">2 x $59.99</span>
-                                        </div>
-                                        <button class="btn-close"></button>
-                                    </div>
-                                    <!-- Single Cart Item End -->
-                                </div>
-                                <!-- Dropdown Cart Items End -->
-                                <!-- Dropdown Cart Total Start -->
-                                <div class="cart-total">
-                                    <span class="label">Subtotal:</span>
-                                    <span class="value">$99.9</span>
-                                </div>
-                                <!-- Dropdown Cart Total End -->
-                                <!-- Dropdown Cart Button Start -->
-                                <div class="cart-btns">
-                                    <a class="btn" href="pricing.html">View Cart</a>
-                                    <a class="btn btn-2" href="pricing.html">Checkout</a>
-                                </div>
-                                <!-- Dropdown Cart Button End -->
-                            </div>
-                            <!-- Header Dropdown Cart End -->
-                        </div>
-                        <!-- Header Cart End -->
-
-                        <div class="header-btn d-none d-xl-block">
-                            <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeQyvc78vtEu_vfAR5BpL9XmMH8Plvt0AuE6YsRdyAivNUr9g/viewform" target="_blank">Register Now</a>
-                        </div>
-                        <!-- Header Toggle Start -->
-                        <div class="header-toggle d-lg-none">
-                            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
-                        <!-- Header Toggle End -->
-                    </div>
-                    <!-- Header Meta End  -->
-
-                </div>
-                <!-- Header Wrap End  -->
-
+      <!-- Header Start  -->
+      <div id="header" class="section exvent-header-section">
+        <div class="container">
+          <!-- Header Wrap Start  -->
+          <div class="header-wrap">
+            <div class="header-logo">
+              <a href="index.html"
+                ><img
+                  src="assets/images/logo/innoverse2.png"
+                  height="150px"
+                  width="auto"
+                  alt=""
+              /></a>
             </div>
+
+            <div class="header-menu d-none d-lg-block">
+              <ul class="main-menu">
+                <li class="active-menu">
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+
+                <li>
+                  <a href="rules.html">Rules</a>
+                </li>
+
+                <li>
+                  <a href="#">Brochure</a>
+                </li>
+
+                <li>
+                  <a href="team.html">Our Team</a>
+                </li>
+
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- Header Meta Start -->
+            <div class="header-meta">
+              <!-- Header Search Start -->
+
+              <!-- Header Search End -->
+              <!-- Header Cart Start -->
+              <div class="header-cart dropdown">
+                <!-- Header Dropdown Cart Start -->
+                <div class="dropdown-menu dropdown-cart slideIn">
+                  <!-- Dropdown Cart Items Start -->
+                  <div class="cart-items">
+                    <!-- Single Cart Item Start -->
+                    <div class="single-cart-item">
+                      <div class="item-image">
+                        <img src="assets/images/cart/cart-1.jpg" alt="cart" />
+                      </div>
+                      <div class="item-content">
+                        <h4 class="title">
+                          <a href="pricing.html">Apple Iphone X</a>
+                        </h4>
+                        <span class="quantity">2 x $59.99</span>
+                      </div>
+                      <button class="btn-close"></button>
+                    </div>
+                    <!-- Single Cart Item End -->
+                    <!-- Single Cart Item Start -->
+                    <div class="single-cart-item">
+                      <div class="item-image">
+                        <img src="assets/images/cart/cart-2.jpg" alt="cart" />
+                      </div>
+                      <div class="item-content">
+                        <h4 class="title">
+                          <a href="pricing.html">Sony Xperia Tablet</a>
+                        </h4>
+                        <span class="quantity">2 x $59.99</span>
+                      </div>
+                      <button class="btn-close"></button>
+                    </div>
+                    <!-- Single Cart Item End -->
+                    <!-- Single Cart Item Start -->
+                    <div class="single-cart-item">
+                      <div class="item-image">
+                        <img src="assets/images/cart/cart-3.jpg" alt="cart" />
+                      </div>
+                      <div class="item-content">
+                        <h4 class="title">
+                          <a href="pricing.html">Camera Digital</a>
+                        </h4>
+                        <span class="quantity">2 x $59.99</span>
+                      </div>
+                      <button class="btn-close"></button>
+                    </div>
+                    <!-- Single Cart Item End -->
+                  </div>
+                  <!-- Dropdown Cart Items End -->
+                  <!-- Dropdown Cart Total Start -->
+                  <div class="cart-total">
+                    <span class="label">Subtotal:</span>
+                    <span class="value">$99.9</span>
+                  </div>
+                  <!-- Dropdown Cart Total End -->
+                  <!-- Dropdown Cart Button Start -->
+                  <div class="cart-btns">
+                    <a class="btn" href="pricing.html">View Cart</a>
+                    <a class="btn btn-2" href="pricing.html">Checkout</a>
+                  </div>
+                  <!-- Dropdown Cart Button End -->
+                </div>
+                <!-- Header Dropdown Cart End -->
+              </div>
+              <!-- Header Cart End -->
+
+              <div class="header-btn d-none d-xl-block">
+                <a
+                  class="btn"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeQyvc78vtEu_vfAR5BpL9XmMH8Plvt0AuE6YsRdyAivNUr9g/viewform"
+                  target="_blank"
+                  >Register Now</a
+                >
+              </div>
+              <!-- Header Toggle Start -->
+              <div class="header-toggle d-lg-none">
+                <button
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <!-- Header Toggle End -->
+            </div>
+            <!-- Header Meta End  -->
+          </div>
+          <!-- Header Wrap End  -->
         </div>
-        <!-- Header End -->
+      </div>
+      <!-- Header End -->
 
-        <!-- Offcanvas Start-->
-        <div class="offcanvas offcanvas-start" id="offcanvasExample">
-            <div class="offcanvas-header">
-                <!-- Offcanvas Logo Start -->
-                <div class="offcanvas-logo">
-                    <a href="index.html"><img src="assets/images/logo/innoverse.png" alt=""></a>
-                </div>
-                <!-- Offcanvas Logo End -->
-                <button type="button" class="close-btn" data-bs-dismiss="offcanvas"><i class="flaticon-close"></i></button>
-            </div>
-
-            <!-- Offcanvas Body Start -->
-            <div class="offcanvas-body">
-                <div class="offcanvas-menu">
-                    <ul class="main-menu">
-                        <li class="active-menu">
-                            <a href="index.html">Home</a>
-                            
-                        </li>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-
-                        <li>
-                            <a href="rules.html">Rules</a>
-                        </li>
-
-                      
-                        <li>
-                            <a href="#">Brochure</a>
-                        </li>
-
-                        <li>
-                            <a href="team.html">Our Team</a>
-                        </li>
-                       
-                       
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Offcanvas Body End -->
+      <!-- Offcanvas Start-->
+      <div class="offcanvas offcanvas-start" id="offcanvasExample">
+        <div class="offcanvas-header">
+          <!-- Offcanvas Logo Start -->
+          <div class="offcanvas-logo">
+            <a href="index.html"
+              ><img src="assets/images/logo/innoverse.png" alt=""
+            /></a>
+          </div>
+          <!-- Offcanvas Logo End -->
+          <button type="button" class="close-btn" data-bs-dismiss="offcanvas">
+            <i class="flaticon-close"></i>
+          </button>
         </div>
-        <!-- Offcanvas End -->
 
+        <!-- Offcanvas Body Start -->
+        <div class="offcanvas-body">
+          <div class="offcanvas-menu">
+            <ul class="main-menu">
+              <li class="active-menu">
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
 
-        <!-- Hero Start -->
-        <div class="section exvent-hero-section d-lg-flex d-block align-items-center" style="background-image: url(assets/images/bg/hero-bg1.png);">
-            <img class="shape-1 img-fluid" src="assets/images/shape/hero_shape1.png" alt="">
-            <img class="shape-2 img-fluid" src="assets/images/shape/hero_shape2.png" alt="">
+              <li>
+                <a href="rules.html">Rules</a>
+              </li>
 
-            <div class="container">
-                <div class="row exvent-hero-row">
-                    <div class="col-lg-6">
-                        <!-- Hero Content Start -->
-                        <div class="hero-content">
-                            <h3 class="sub-title" data-aos="fade-down" data-aos-delay="600">22-23<br>
-                            March 2024</h3>
-                            <h2 class="title" data-aos="fade-left" data-aos-delay="800">Hackathon</h2>
-                            <div class="event-address" data-aos="fade-up" data-aos-delay="1000">
-                                <h5>March 2024 , GIT Belgaum</h5>
-                            </div>
-                            <div class="hero-btn">
-                                <a class="btn-hero" href="https://docs.google.com/forms/d/e/1FAIpQLSeQyvc78vtEu_vfAR5BpL9XmMH8Plvt0AuE6YsRdyAivNUr9g/viewform" data-aos="fade-right" data-aos-delay="1500">Register Now</a>
-                            </div>
-                            <div class="shape-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="459.5px" height="532.5px">
-                                    <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="3px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M456.500,364.422 C456.500,456.306 456.500,529.499 456.500,529.499 L1.500,529.499 L1.500,1.499 L456.500,1.499 C456.500,1.499 456.500,71.458 456.500,160.447 " />
-                                </svg>
-                            </div>
-                        </div>
-                        <!-- Hero Content End -->
-                    </div>
-                </div>
-            </div>
+              <li>
+                <a href="#">Brochure</a>
+              </li>
 
-            
+              <li>
+                <a href="team.html">Our Team</a>
+              </li>
 
-            <!-- Hero Image Start -->
-            <div class="hero-images">
-                <div class="images" data-aos="fade-left" data-aos-delay="900">
-                    <img src="assets/images/hero_img1.jpg" alt="">
-                </div>
-            </div>
-            <!-- Hero Image ennd -->
-            
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
-        <!-- Hero End -->
+        <!-- Offcanvas Body End -->
+      </div>
+      <!-- Offcanvas End -->
 
+      <!-- Hero Start -->
+      <div
+        class="section exvent-hero-section d-lg-flex d-block align-items-center"
+        style="background-image: url(assets/images/bg/hero-bg1.png)"
+      >
+        <img
+          class="shape-1 img-fluid"
+          src="assets/images/shape/hero_shape1.png"
+          alt=""
+        />
+        <img
+          class="shape-2 img-fluid"
+          src="assets/images/shape/hero_shape2.png"
+          alt=""
+        />
 
-        <!-- Event Counter Start -->
-        <div class="event-countdown-5 section-padding-02 grey-bg">
-            <div class="container">
-                <div class="counter-wrapper">
-                    <div class="row gx-0 gy-5 align-items-center">
-                        <div class="col-lg-4 text-center">
-                            <div class="counter-content-left">
-                                <h4 class="counter-title">Event Starting</h4>
-                                <span class="counter-subtitle">Time Remaining</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 text-center">
-                            <!-- Countdown Start -->
-                            <div class="exvent-countdown-inner-5 countdown" data-countdown="2024/03/22" data-format="short">
-                                <div class="single-countdown">
-                                    <span class="count countdown__time daysLeft"></span>
-                                    <span class="value countdown__time daysText"></span>
-                                </div>
-                                <div class="single-countdown countdown-2">
-                                    <span class="count countdown__time hoursLeft"></span>
-                                    <span class="value countdown__time hoursText"></span>
-                                </div>
-                                <div class="single-countdown countdown-3">
-                                    <span class="count countdown__time minsLeft"></span>
-                                    <span class="value countdown__time minsText"></span>
-                                </div>
-                                <div class="single-countdown countdown-4">
-                                    <span class="count countdown__time secsLeft"></span>
-                                    <span class="value countdown__time secsText"></span>
-                                </div>
-                            </div>
-                            <!-- Countdown End -->
-                        </div>
-                    </div>
+        <div class="container">
+          <div class="row exvent-hero-row">
+            <div class="col-lg-6">
+              <!-- Hero Content Start -->
+              <div class="hero-content">
+                <h3 class="sub-title" data-aos="fade-down" data-aos-delay="600">
+                  22-23<br />
+                  March 2024
+                </h3>
+                <h2 class="title" data-aos="fade-left" data-aos-delay="800">
+                  Hackathon
+                </h2>
+                <div
+                  class="event-address"
+                  data-aos="fade-up"
+                  data-aos-delay="1000"
+                >
+                  <h5>March 2024 , GIT Belgaum</h5>
                 </div>
-            </div>
-        </div>
-        <!-- Event Counter End -->
-
-
-        <!-- About Area Start -->
-        <div class="about-section section-padding-03">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-5 order-lg-1 order-2">
-                        <div class="about-thumb-wrap">
-                            <img src="assets/images/team/ai-cloud-concept-with-robot-arm.png" alt="about_img1">
-                            <img src="assets/images/team/3d-rendering-biorobots-concept.png" alt="about_img2">
-                        </div>
-                    </div>
-                    <div class="col-lg-7 order-lg-1 order-1">
-                        <div class="about-content-wrap">
-                            <img src="assets/images/shape/about_content_shape1.png" alt="shape" class="about-box-shape">
-                            <img src="assets/images/shape/about_shape1.png" alt="shape x" class="about-shape-x">
-                            <div class="section-title">
-                                <h5 class="sub-title">An event for</h5>
-                                <h2 class="title">Get curious. Be inspired. Create your future.</h2>
-                            </div>
-                            <div class="section-paragraph">
-                                <p>Welcome to the ultimate innovation battleground! Join us at our national-level hackathon where the brightest minds in technology converge to revolutionize the future. Dive into the realms of blockchain, artificial intelligence & machine learning, and cyber security as you tackle real-world challenges and push the boundaries of what's possible. Whether you're a seasoned coder or a visionary newcomer, this is your chance to make an impact, network with industry leaders, and win prestigious awards. Don't miss out on this incredible opportunity to shape tomorrow's world. Register now and let the hacking begin! </p>
-                            </div>
-                            <div class="about-btn">
-                                <a class="btn" href="#">Register Now</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="hero-btn">
+                  <a
+                    class="btn-hero"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeQyvc78vtEu_vfAR5BpL9XmMH8Plvt0AuE6YsRdyAivNUr9g/viewform"
+                    data-aos="fade-right"
+                    data-aos-delay="1500"
+                    >Register Now</a
+                  >
                 </div>
+                <div class="shape-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="459.5px"
+                    height="532.5px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(255, 255, 255)"
+                      stroke-width="3px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M456.500,364.422 C456.500,456.306 456.500,529.499 456.500,529.499 L1.500,529.499 L1.500,1.499 L456.500,1.499 C456.500,1.499 456.500,71.458 456.500,160.447 "
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- Hero Content End -->
             </div>
+          </div>
         </div>
-        <!-- About Area End -->
 
-        <!-- Speaker Area Start -->
-      
-        <!-- Speaker Area End -->
+        <!-- Hero Image Start -->
+        <div class="hero-images">
+          <div class="images" data-aos="fade-left" data-aos-delay="900">
+            <img src="assets/images/hero_img1.jpg" alt="" />
+          </div>
+        </div>
+        <!-- Hero Image ennd -->
+      </div>
+      <!-- Hero End -->
 
-        <!-- Schedule Area Start -->
-        <!--<div class="schedule-area section-padding-02 grey-bg">
+      <!-- Event Counter Start -->
+      <div class="event-countdown-5 section-padding-02 grey-bg">
+        <div class="container">
+          <div class="counter-wrapper">
+            <div class="row gx-0 gy-5 align-items-center">
+              <div class="col-lg-4 text-center">
+                <div class="counter-content-left">
+                  <h4 class="counter-title">Event Starting</h4>
+                  <span class="counter-subtitle">Time Remaining</span>
+                </div>
+              </div>
+              <div class="col-lg-8 text-center">
+                <!-- Countdown Start -->
+                <div
+                  class="exvent-countdown-inner-5 countdown"
+                  data-countdown="2024/03/22"
+                  data-format="short"
+                >
+                  <div class="single-countdown">
+                    <span class="count countdown__time daysLeft"></span>
+                    <span class="value countdown__time daysText"></span>
+                  </div>
+                  <div class="single-countdown countdown-2">
+                    <span class="count countdown__time hoursLeft"></span>
+                    <span class="value countdown__time hoursText"></span>
+                  </div>
+                  <div class="single-countdown countdown-3">
+                    <span class="count countdown__time minsLeft"></span>
+                    <span class="value countdown__time minsText"></span>
+                  </div>
+                  <div class="single-countdown countdown-4">
+                    <span class="count countdown__time secsLeft"></span>
+                    <span class="value countdown__time secsText"></span>
+                  </div>
+                </div>
+                <!-- Countdown End -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Event Counter End -->
+
+      <!-- About Area Start -->
+      <div class="about-section section-padding-03">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-lg-5 order-lg-1 order-2">
+              <div class="about-thumb-wrap">
+                <img
+                  src="assets/images/team/ai-cloud-concept-with-robot-arm.png"
+                  alt="about_img1"
+                />
+                <img
+                  src="assets/images/team/3d-rendering-biorobots-concept.png"
+                  alt="about_img2"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 order-lg-1 order-1">
+              <div class="about-content-wrap">
+                <img
+                  src="assets/images/shape/about_content_shape1.png"
+                  alt="shape"
+                  class="about-box-shape"
+                />
+                <img
+                  src="assets/images/shape/about_shape1.png"
+                  alt="shape x"
+                  class="about-shape-x"
+                />
+                <div class="section-title">
+                  <h5 class="sub-title">An event for</h5>
+                  <h2 class="title">
+                    Get curious. Be inspired. Create your future.
+                  </h2>
+                </div>
+                <div class="section-paragraph">
+                  <p>
+                    Welcome to the ultimate innovation battleground! Join us at
+                    our national-level hackathon where the brightest minds in
+                    technology converge to revolutionize the future. Dive into
+                    the realms of blockchain, artificial intelligence & machine
+                    learning, and cyber security as you tackle real-world
+                    challenges and push the boundaries of what's possible.
+                    Whether you're a seasoned coder or a visionary newcomer,
+                    this is your chance to make an impact, network with industry
+                    leaders, and win prestigious awards. Don't miss out on this
+                    incredible opportunity to shape tomorrow's world. Register
+                    now and let the hacking begin!
+                  </p>
+                </div>
+                <div class="about-btn">
+                  <a class="btn" href="#">Register Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About Area End -->
+
+      <!-- Speaker Area Start -->
+
+      <!-- Speaker Area End -->
+
+      <!-- Schedule Area Start -->
+      <!--<div class="schedule-area section-padding-02 grey-bg">
             <img src="assets/images/shape/schedule_shape1.png" class="schedule-shape1" alt="Shape1">
             <img src="assets/images/shape/schedule_shape2.png" class="schedule-shape2" alt="Shape2">
             <div class="container">
@@ -788,171 +905,205 @@
             </div>
         </div>
     -->
-        <!-- Schedule Area End -->
+      <!-- Schedule Area End -->
 
-        <!-- Pricing Area Start -->
-       
-        <!-- Pricing Area End -->
+      <!-- Pricing Area Start -->
 
-        <!-- Brand Area Start -->
-        <div class="brand-area section-padding-05">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-title-wrap">
-                            <div class="section-title text-center">
-                                <h5 class="sub-title">Sponsors</h5>
-                                <h2 class="title">Leading companies with us</h2>
-                            </div>
-                        </div>
-                    </div>
+      <!-- Pricing Area End -->
+
+      <!-- Brand Area Start -->
+      <div class="brand-area section-padding-05">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title-wrap">
+                <div class="section-title text-center">
+                  <h5 class="sub-title">Sponsors</h5>
+                  <h2 class="title">Leading companies with us</h2>
                 </div>
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-3 col-6">
-                        <div class="brand-item">
-                            <a href="#"><img src="assets/images/logo/portqii.svg" alt="Brand"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="brand-item">
-                            <a href="#"><img src="assets/images/logo/logo.svg" alt="Brand"></a>
-                        </div>
-                    </div>
-                   
-                  
-                   
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-3 col-6">
+              <div class="brand-item">
+                <a href="#"
+                  ><img src="assets/images/logo/portqii.svg" alt="Brand"
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="brand-item">
+                <a href="#"
+                  ><img src="assets/images/logo/logo.svg" alt="Brand"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Brand Area End -->
+      </div>
 
-        <!-- Past Event Gallery Area Start -->
-        <div class="past-event-gallery-area section-padding-06 grey-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-title-wrap">
-                            <div class="section-title text-center">
-                                <h5 class="sub-title">Previous Gallery</h5>
-                                <h2 class="title">Past event memories</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-md-3 col-sm-6">
-                        <a href="#" class="single-gallery">
-                            <img src="assets/images/team/1.png" alt="gallery">
-                            <div class="gallery-content">
-                                <span>Aug</span>
-                                <h5>2018</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="#" class="single-gallery">
-                            <img src="assets/images/team/2.png" alt="gallery">
-                            <div class="gallery-content">
-                                <span>Jun</span>
-                                <h5>2019</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="#" class="single-gallery">
-                            <img src="assets/images/team/3.png" alt="gallery">
-                            <div class="gallery-content">
-                                <span>Sep</span>
-                                <h5>2020</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <a href="#" class="single-gallery">
-                            <img src="assets/images/team/4.png" alt="gallery">
-                            <div class="gallery-content">
-                                <span>May</span>
-                                <h5>2021</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Registration Open for Hackathon</h2>
+          <p>Themes: Blockchain, AI & ML, Cyber Security</p>
+          <p>
+            Problem statements will be announced 1 day prior to the start of the
+            event.
+          </p>
         </div>
-        <!-- Past Event Gallery Area End -->
+      </div>
+      <!-- Brand Area End -->
 
-        <!-- Footer Section Start -->
-        <div class="footer-section" style="background-image: url(assets/images/bg/footer_bg1.jpg);">
-            <div class="container">
-                <div class="footer-newsletter">
-                    <div class="row">
-                        <div class="col-lg-5 col-12 text-sm-start text-center">
-                            <div class="footer-title">
-                                <span>Subscribe Newsletter</span>
-                                <h4>Subscribe to recieve
-                                    daily news</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-12">
-                            <div class="footer-newsletter-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Your Email">
-                                    <button class="btn btn-primary">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+      <!-- Past Event Gallery Area Start -->
+      <div class="past-event-gallery-area section-padding-06 grey-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title-wrap">
+                <div class="section-title text-center">
+                  <h5 class="sub-title">Previous Gallery</h5>
+                  <h2 class="title">Past event memories</h2>
                 </div>
+              </div>
             </div>
-            <div class="footer-widget-social">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-12">
-                            <div class="social-title">
-                                <h4 class="title">Connect With us</h4>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <ul class="social-list">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="https://www.instagram.com/innoverse_git_mca/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="single-gallery">
+                <img src="assets/images/team/1.png" alt="gallery" />
+                <div class="gallery-content">
+                  <span>Aug</span>
+                  <h5>2018</h5>
                 </div>
+              </a>
             </div>
-      
-
-            <!-- Footer Copyright Start -->
-            <div class="footer-copyright-area">
-                <div class="container">
-                    <div class="footer-copyright-wrap">
-                        <div class="row align-items-center">
-                            <div class="col-lg-12">
-                                <!-- Footer Copyright Text Start -->
-                                <div class="copyright-text text-center">
-                                    <p>2024 Copyright Innoverse Designed by Alzaahid . All Rights Reserved</p>
-                                </div>
-                                <!-- Footer Copyright Text End -->
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="single-gallery">
+                <img src="assets/images/team/2.png" alt="gallery" />
+                <div class="gallery-content">
+                  <span>Jun</span>
+                  <h5>2019</h5>
                 </div>
+              </a>
             </div>
-            <!-- Footer Copyright End -->
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="single-gallery">
+                <img src="assets/images/team/3.png" alt="gallery" />
+                <div class="gallery-content">
+                  <span>Sep</span>
+                  <h5>2020</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="single-gallery">
+                <img src="assets/images/team/4.png" alt="gallery" />
+                <div class="gallery-content">
+                  <span>May</span>
+                  <h5>2021</h5>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        <!-- Footer Section End -->
+      </div>
+      <!-- Past Event Gallery Area End -->
 
-        <!-- back to top start -->
-        <div class="progress-wrap">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-            </svg>
+      <!-- Footer Section Start -->
+      <div
+        class="footer-section"
+        style="background-image: url(assets/images/bg/footer_bg1.jpg)"
+      >
+        <div class="container">
+          <div class="footer-newsletter">
+            <div class="row">
+              <div class="col-lg-5 col-12 text-sm-start text-center">
+                <div class="footer-title">
+                  <span>Subscribe Newsletter</span>
+                  <h4>Subscribe to recieve daily news</h4>
+                </div>
+              </div>
+              <div class="col-lg-7 col-12">
+                <div class="footer-newsletter-form">
+                  <form action="#">
+                    <input type="text" placeholder="Your Email" />
+                    <button class="btn btn-primary">Subscribe</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- back to top end -->
+        <div class="footer-widget-social">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-12">
+                <div class="social-title">
+                  <h4 class="title">Connect With us</h4>
+                </div>
+              </div>
+              <div class="col-12">
+                <ul class="social-list">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/innoverse_git_mca/"
+                      target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Footer Copyright Start -->
+        <div class="footer-copyright-area">
+          <div class="container">
+            <div class="footer-copyright-wrap">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <!-- Footer Copyright Text Start -->
+                  <div class="copyright-text text-center">
+                    <p>
+                      2024 Copyright Innoverse Designed by Alzaahid . All Rights
+                      Reserved
+                    </p>
+                  </div>
+                  <!-- Footer Copyright Text End -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Copyright End -->
+      </div>
+      <!-- Footer Section End -->
+
+      <!-- back to top start -->
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+      <!-- back to top end -->
     </div>
 
     <!-- JS
@@ -975,38 +1126,56 @@
     <script src="assets/js/plugins/lightbox.min.js"></script>
     <script src="assets/js/plugins/gijgo.min.js"></script>
 
-
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
-
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const numFlakes = 50;
-            const snowflakesContainer = document.querySelector('.snowflakes');
-        
-            for (let i = 0; i < numFlakes; i++) {
-                createSnowflake();
-            }
-        
-            function createSnowflake() {
-                const snowflake = document.createElement('div');
-                snowflake.className = 'snowflake';
-                snowflake.style.left = Math.random() * 100 + 'vw';
-                snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
-                snowflakesContainer.appendChild(snowflake);
-        
-                // Remove the snowflake after it has fallen
-                snowflake.addEventListener('animationend', function () {
-                    snowflake.remove();
-                    createSnowflake();
-                });
-            }
-        });
-        
+      document.addEventListener("DOMContentLoaded", function () {
+        const numFlakes = 50;
+        const snowflakesContainer = document.querySelector(".snowflakes");
+
+        for (let i = 0; i < numFlakes; i++) {
+          createSnowflake();
+        }
+
+        function createSnowflake() {
+          const snowflake = document.createElement("div");
+          snowflake.className = "snowflake";
+          snowflake.style.left = Math.random() * 100 + "vw";
+          snowflake.style.animationDuration = Math.random() * 3 + 2 + "s";
+          snowflakesContainer.appendChild(snowflake);
+
+          // Remove the snowflake after it has fallen
+          snowflake.addEventListener("animationend", function () {
+            snowflake.remove();
+            createSnowflake();
+          });
+        }
+      });
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the page loads, show the modal
+      window.onload = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
     </script>
-
-</body>
-
+  </body>
 </html>
