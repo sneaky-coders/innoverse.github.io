@@ -94,6 +94,38 @@
     ::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
+
+    /* Styling for the preloader container */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Background color for preloader */
+    z-index: 9999; /* Ensure preloader is on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the preloader image */
+.preloader img {
+    width: 100px; /* Adjust the size of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: pulse 1.5s ease-in-out infinite alternate; /* Apply the pulse animation */
+}
+
+/* Keyframe animation for the pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
     
 </style>
 </head>
@@ -106,10 +138,10 @@
         <!-- Preloader start -->
         <div id="preloader">
             <div class="preloader">
-                <span></span>
-                <span></span>
+                <img src="assets/images/logo/innoverse2.png" alt="Loading...">
             </div>
         </div>
+        
         <!-- Preloader End -->
 
         <!-- Header Start  -->
@@ -137,7 +169,7 @@
                             </li>
 
                             <li>
-                                <a href="#">Rules</a>
+                                <a href="rules.html">Rules</a>
                             </li>
 
                           
@@ -263,31 +295,24 @@
                             
                         </li>
                         <li>
-                            <a href="#">Aboute Us</a>
+                            <a href="#">About Us</a>
                         </li>
-                        <li><a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="speaker-01.html">Speaker 01</a></li>
-                                <li><a href="speaker-02.html">Speaker 02</a></li>
-                                <li><a href="speaker-03.html">Speaker 03</a></li>
-                                <li><a href="#">Speaker Single</a></li>
-                                <li><a href="event-list.html">Event List</a></li>
-                                <li><a href="event-schedule.html">Event Schedule</a></li>
-                                <li><a href="event-single.html">Event Single</a></li>
-                                <li><a href="login-register.html">Login & Register</a></li>
-                                <li><a href="testimonial.html">Testimonial</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="faq.html">FQA's</a></li>
-                            </ul>
+
+                        <li>
+                            <a href="rules.html">Rules</a>
                         </li>
-                        <li><a href="blog.html">Blog</a>
-                            <ul class="sub-menu">
-                                <li><a href="blog.html">Blog list</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
+
+                      
+                        <li>
+                            <a href="#">Brochure</a>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+
+                        <li>
+                            <a href="team.html">Our Team</a>
+                        </li>
+                       
+                       
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -297,7 +322,7 @@
 
 
         <!-- Hero Start -->
-        <div class="section exvent-hero-section d-lg-flex d-block align-items-center" style="background-image: url(assets/images/bg/hero_bg1.jpg);">
+        <div class="section exvent-hero-section d-lg-flex d-block align-items-center" style="background-image: url(assets/images/bg/hero-bg1.png);">
             <img class="shape-1 img-fluid" src="assets/images/shape/hero_shape1.png" alt="">
             <img class="shape-2 img-fluid" src="assets/images/shape/hero_shape2.png" alt="">
 
@@ -313,7 +338,7 @@
                                 <h5>March 2024 , GIT Belgaum</h5>
                             </div>
                             <div class="hero-btn">
-                                <a class="btn-hero" href="#" data-aos="fade-right" data-aos-delay="1500">Register Now</a>
+                                <a class="btn-hero" href="https://docs.google.com/forms/d/e/1FAIpQLSeQyvc78vtEu_vfAR5BpL9XmMH8Plvt0AuE6YsRdyAivNUr9g/viewform" data-aos="fade-right" data-aos-delay="1500">Register Now</a>
                             </div>
                             <div class="shape-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="459.5px" height="532.5px">
@@ -331,7 +356,7 @@
             <!-- Hero Image Start -->
             <div class="hero-images">
                 <div class="images" data-aos="fade-left" data-aos-delay="900">
-                    <img src="assets/images/hero_img1.png" alt="">
+                    <img src="assets/images/hero_img1.jpg" alt="">
                 </div>
             </div>
             <!-- Hero Image ennd -->
@@ -386,8 +411,8 @@
                 <div class="row g-0">
                     <div class="col-lg-5 order-lg-1 order-2">
                         <div class="about-thumb-wrap">
-                            <img src="assets/images/about_img1.jpg" alt="about_img1">
-                            <img src="assets/images/about_img2.jpg" alt="about_img2">
+                            <img src="assets/images/team/ai-cloud-concept-with-robot-arm.png" alt="about_img1">
+                            <img src="assets/images/team/3d-rendering-biorobots-concept.png" alt="about_img2">
                         </div>
                     </div>
                     <div class="col-lg-7 order-lg-1 order-1">
@@ -399,11 +424,10 @@
                                 <h2 class="title">Get curious. Be inspired. Create your future.</h2>
                             </div>
                             <div class="section-paragraph">
-                                <p>We’re inviting the top creatives in the tech industry from all over the world to come learn, grow, scrape their knees, try new things, to be vulnerable, and to have epic adventures</p>
-                                <p>Grow, scrape their knees, try new things, to be vulnerable, and to have epic adventures together, this time both </p>
+                                <p>Welcome to the ultimate innovation battleground! Join us at our national-level hackathon where the brightest minds in technology converge to revolutionize the future. Dive into the realms of blockchain, artificial intelligence & machine learning, and cyber security as you tackle real-world challenges and push the boundaries of what's possible. Whether you're a seasoned coder or a visionary newcomer, this is your chance to make an impact, network with industry leaders, and win prestigious awards. Don't miss out on this incredible opportunity to shape tomorrow's world. Register now and let the hacking begin! </p>
                             </div>
                             <div class="about-btn">
-                                <a class="btn" href="pricing.html">Contact for booking</a>
+                                <a class="btn" href="#">Register Now</a>
                             </div>
                         </div>
                     </div>
@@ -413,152 +437,11 @@
         <!-- About Area End -->
 
         <!-- Speaker Area Start -->
-        <div class="speaker-section section-padding-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-title text-center">
-                            <h5 class="sub-title">Speakers</h5>
-                            <h2 class="title white">Iconic industry-leading speakers</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-0 justify-content-center">
-                    <div class="col-lg-3 col-sm-6 ">
-                        <a class="speaker-link" href="#">
-                            <div class="single-speaker">
-                                <div class="speaker-thumb">
-                                    <img src="assets/images/speaker/speaker_1.jpg" alt="Speaker">
-                                </div>
-                                <div class="speaker-content">
-                                    <h4>Mike Fermalin</h4>
-                                    <span>Career Expert</span>
-                                </div>
-                                <div class="speaker-shape">
-                                    <img src="assets/images/shape/speaker_shape1.png" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 ">
-                        <a class="speaker-link" href="#">
-                            <div class="single-speaker">
-                                <div class="speaker-thumb">
-                                    <img src="assets/images/speaker/speaker_2.jpg" alt="Speaker">
-                                </div>
-                                <div class="speaker-content">
-                                    <h4>Anna Blair</h4>
-                                    <span>Founder, Marks</span>
-                                </div>
-                                <div class="speaker-shape">
-                                    <img src="assets/images/shape/speaker_shape1.png" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 ">
-                        <a class="speaker-link" href="#">
-                            <div class="single-speaker">
-                                <div class="speaker-thumb">
-                                    <img src="assets/images/speaker/speaker_3.jpg" alt="Speaker">
-                                </div>
-                                <div class="speaker-content">
-                                    <h4>Trevor J. Bell</h4>
-                                    <span>Lead Trainer, Blids</span>
-                                </div>
-                                <div class="speaker-shape">
-                                    <img src="assets/images/shape/speaker_shape1.png" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 ">
-                        <a class="speaker-link" href="#">
-                            <div class="single-speaker">
-                                <div class="speaker-thumb">
-                                    <img src="assets/images/speaker/speaker_4.jpg" alt="Speaker">
-                                </div>
-                                <div class="speaker-content">
-                                    <h4>Michael Rooker</h4>
-                                    <span>Developer Expert</span>
-                                </div>
-                                <div class="speaker-shape">
-                                    <img src="assets/images/shape/speaker_shape1.png" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 ">
-                        <a class="speaker-link" href="#">
-                            <div class="single-speaker">
-                                <div class="speaker-thumb">
-                                    <img src="assets/images/speaker/speaker_5.jpg" alt="Speaker">
-                                </div>
-                                <div class="speaker-content">
-                                    <h4>David B. Perez</h4>
-                                    <span>Founder, Madis</span>
-                                </div>
-                                <div class="speaker-shape">
-                                    <img src="assets/images/shape/speaker_shape1.png" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 ">
-                        <a class="speaker-link" href="#">
-                            <div class="single-speaker">
-                                <div class="speaker-thumb">
-                                    <img src="assets/images/speaker/speaker_6.jpg" alt="Speaker">
-                                </div>
-                                <div class="speaker-content">
-                                    <h4>Agustin Todaro</h4>
-                                    <span>Founder, Nickho</span>
-                                </div>
-                                <div class="speaker-shape">
-                                    <img src="assets/images/shape/speaker_shape1.png" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 ">
-                        <a class="speaker-link" href="#">
-                            <div class="single-speaker">
-                                <div class="speaker-thumb">
-                                    <img src="assets/images/speaker/speaker_7.jpg" alt="Speaker">
-                                </div>
-                                <div class="speaker-content">
-                                    <h4>Trisha Fisher</h4>
-                                    <span>President, Child Care</span>
-                                </div>
-                                <div class="speaker-shape">
-                                    <img src="assets/images/shape/speaker_shape1.png" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 ">
-                        <a class="speaker-link" href="#">
-                            <div class="single-speaker">
-                                <div class="speaker-thumb">
-                                    <img src="assets/images/speaker/speaker_8.jpg" alt="Speaker">
-                                </div>
-                                <div class="speaker-content">
-                                    <h4>Jon P. Monroe</h4>
-                                    <span>Traveller</span>
-                                </div>
-                                <div class="speaker-shape">
-                                    <img src="assets/images/shape/speaker_shape1.png" alt="Shape">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
         <!-- Speaker Area End -->
 
         <!-- Schedule Area Start -->
-        <div class="schedule-area section-padding-02 grey-bg">
+        <!--<div class="schedule-area section-padding-02 grey-bg">
             <img src="assets/images/shape/schedule_shape1.png" class="schedule-shape1" alt="Shape1">
             <img src="assets/images/shape/schedule_shape2.png" class="schedule-shape2" alt="Shape2">
             <div class="container">
@@ -904,84 +787,11 @@
                 </div>
             </div>
         </div>
+    -->
         <!-- Schedule Area End -->
 
         <!-- Pricing Area Start -->
-        <div class="pricing-area section-padding-04" style="background-image: url(assets/images/bg/price_bg.jpg);">
-            <div class="pricing-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="section-title-wrap">
-                                <div class="section-title text-center">
-                                    <h5 class="sub-title">Event Pricing</h5>
-                                    <h2 class="title white">Book your seat now</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-sm-7">
-                            <div class="price-card text-center">
-                                <div class="price-header">
-                                    <span class="price-plan">Basic Pass</span>
-                                    <h3 class="price-ammount"><sup>$</sup>43</h3>
-                                </div>
-                                <div class="price-body">
-                                    <ul class="price-desc">
-                                        <li>Back Row Seat</li>
-                                        <li>Free Lunch & Snacks</li>
-                                        <li>Event Certificate</li>
-                                        <li>1 Workshop</li>
-                                    </ul>
-                                </div>
-                                <div class="price-footer">
-                                    <a href="pricing.html" class="btn price-btn btn-blue"> Book a seat</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-7">
-                            <div class="price-card text-center">
-                                <div class="price-header pink-bg">
-                                    <span class="price-plan">Premium Pass</span>
-                                    <h3 class="price-ammount"><sup>$</sup>143</h3>
-                                </div>
-                                <div class="price-body">
-                                    <ul class="price-desc">
-                                        <li>Back Row Seat</li>
-                                        <li>Free Lunch & Snacks</li>
-                                        <li>Event Certificate</li>
-                                        <li>1 Workshop</li>
-                                    </ul>
-                                </div>
-                                <div class="price-footer">
-                                    <a href="pricing.html" class="btn price-btn"> Book a seat</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-7">
-                            <div class="price-card text-center">
-                                <div class="price-header yellow-bg">
-                                    <span class="price-plan">Platinam Pass</span>
-                                    <h3 class="price-ammount"><sup>$</sup>243</h3>
-                                </div>
-                                <div class="price-body">
-                                    <ul class="price-desc">
-                                        <li>Back Row Seat</li>
-                                        <li>Free Lunch & Snacks</li>
-                                        <li>Event Certificate</li>
-                                        <li>1 Workshop</li>
-                                    </ul>
-                                </div>
-                                <div class="price-footer">
-                                    <a href="pricing.html" class="btn price-btn btn-yellow"> Book a seat</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <!-- Pricing Area End -->
 
         <!-- Brand Area Start -->
@@ -992,7 +802,7 @@
                         <div class="section-title-wrap">
                             <div class="section-title text-center">
                                 <h5 class="sub-title">Sponsors</h5>
-                                <h2 class="title">50+ leading companies with us</h2>
+                                <h2 class="title">Leading companies with us</h2>
                             </div>
                         </div>
                     </div>
@@ -1000,44 +810,17 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-md-3 col-6">
                         <div class="brand-item">
-                            <a href="blog-details.html"><img src="assets/images/logo/brand1.png" alt="Brand"></a>
+                            <a href="#"><img src="assets/images/logo/portqii.svg" alt="Brand"></a>
                         </div>
                     </div>
                     <div class="col-md-3 col-6">
                         <div class="brand-item">
-                            <a href="blog-details.html"><img src="assets/images/logo/brand2.png" alt="Brand"></a>
+                            <a href="#"><img src="assets/images/logo/logo.svg" alt="Brand"></a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <div class="brand-item">
-                            <a href="blog-details.html"><img src="assets/images/logo/brand3.png" alt="Brand"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="brand-item">
-                            <a href="blog-details.html"><img src="assets/images/logo/brand4.png" alt="Brand"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="brand-item">
-                            <a href="blog-details.html"><img src="assets/images/logo/brand5.png" alt="Brand"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="brand-item">
-                            <a href="blog-details.html"><img src="assets/images/logo/brand6.png" alt="Brand"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="brand-item">
-                            <a href="blog-details.html"><img src="assets/images/logo/brand7.png" alt="Brand"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="brand-item">
-                            <a href="blog-details.html"><img src="assets/images/logo/brand8.png" alt="Brand"></a>
-                        </div>
-                    </div>
+                   
+                  
+                   
                 </div>
             </div>
         </div>
@@ -1058,8 +841,8 @@
                 </div>
                 <div class="row g-0">
                     <div class="col-md-3 col-sm-6">
-                        <a href="event-list.html" class="single-gallery">
-                            <img src="assets/images/gallery1.jpg" alt="gallery">
+                        <a href="#" class="single-gallery">
+                            <img src="assets/images/team/1.png" alt="gallery">
                             <div class="gallery-content">
                                 <span>Aug</span>
                                 <h5>2018</h5>
@@ -1067,8 +850,8 @@
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <a href="event-list.html" class="single-gallery">
-                            <img src="assets/images/gallery2.jpg" alt="gallery">
+                        <a href="#" class="single-gallery">
+                            <img src="assets/images/team/2.png" alt="gallery">
                             <div class="gallery-content">
                                 <span>Jun</span>
                                 <h5>2019</h5>
@@ -1076,8 +859,8 @@
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <a href="event-list.html" class="single-gallery">
-                            <img src="assets/images/gallery3.jpg" alt="gallery">
+                        <a href="#" class="single-gallery">
+                            <img src="assets/images/team/3.png" alt="gallery">
                             <div class="gallery-content">
                                 <span>Sep</span>
                                 <h5>2020</h5>
@@ -1085,8 +868,8 @@
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <a href="event-list.html" class="single-gallery">
-                            <img src="assets/images/gallery4.jpg" alt="gallery">
+                        <a href="#" class="single-gallery">
+                            <img src="assets/images/team/4.png" alt="gallery">
                             <div class="gallery-content">
                                 <span>May</span>
                                 <h5>2021</h5>
@@ -1134,7 +917,7 @@
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.instagram.com/innoverse_git_mca/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
