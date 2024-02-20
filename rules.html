@@ -1,538 +1,719 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Innoverse 2K24</title>
-    <meta name="robots" content="noindex, follow">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/innoverse2.png">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/logo/innoverse2.png"
+    />
 
     <!-- CSS
 	============================================ -->
 
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/all.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/flaticon.css">
+    <link rel="stylesheet" href="assets/css/plugins/all.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/flaticon.css" />
 
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/plugins/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/gijgo.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/plugins/lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/gijgo.min.css" />
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
     <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <style>
 
-</head>
+        /* Styles for the scrollbar */
+        ::-webkit-scrollbar {
+             width: 10px;
+         }
+     
+         /* Track */
+         ::-webkit-scrollbar-track {
+             background: #f1f1f1;
+             border-radius: 5px;
+         }
+     
+         /* Handle */
+         ::-webkit-scrollbar-thumb {
+             background: #888;
+             border-radius: 5px;
+         }
+     
+         /* Handle on hover */
+         ::-webkit-scrollbar-thumb:hover {
+             background: #555;
+         }
 
-<body>
+         #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Background color for preloader */
+    z-index: 9999; /* Ensure preloader is on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* Styling for the preloader image */
+.preloader img {
+    width: 100px; /* Adjust the size of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: pulse 1.5s ease-in-out infinite alternate; /* Apply the pulse animation */
+}
+
+/* Keyframe animation for the pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+     </style>
+  </head>
+
+  <body>
     <div class="main-wrapper">
-
-
-        <!-- Preloader start -->
-        <div id="preloader">
-            <div class="preloader">
-                <span></span>
-                <span></span>
-            </div>
+      <!-- Preloader start -->
+      <div id="preloader">
+        <div class="preloader">
+          <img src="assets/images/logo/innoverse2.png" alt="Loading..." />
         </div>
-        <!-- Preloader End -->
+      </div>
+      <!-- Preloader End -->
 
-        <!-- Header Start  -->
-        <div id="header" class="section exvent-header-section">
+      <!-- Header Start  -->
+      <div id="header" class="section exvent-header-section">
+        <div class="container">
+          <!-- Header Wrap Start  -->
+          <div class="header-wrap">
+            <div class="header-logo">
+              <a href="index.html"
+                ><img
+                  src="assets/images/logo/innoverse2.png"
+                  height="150px"
+                  width="auto"
+                  alt=""
+              /></a>
+            </div>
 
-            <div class="container">
+            <div class="header-menu d-none d-lg-block">
+              <ul class="main-menu">
+                <li class="active-menu">
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
 
-                <!-- Header Wrap Start  -->
-                <div class="header-wrap">
+                <li>
+                  <a href="rules.html">Rules</a>
+                </li>
 
-                    <div class="header-logo">
-                        <a href="index.html"><img src="assets/images/logo/innoverse2.png" height="150px" width="auto" alt=""></a>
+                <li>
+                  <a href="#">Brochure</a>
+                </li>
+
+                <li>
+                  <a href="team.html">Our Team</a>
+                </li>
+
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- Header Meta Start -->
+            <div class="header-meta">
+              <!-- Header Search Start -->
+             
+              <!-- Header Search End -->
+              <!-- Header Cart Start -->
+              <div class="header-cart dropdown">
+               
+                <!-- Header Dropdown Cart Start -->
+                <div class="dropdown-menu dropdown-cart slideIn">
+                  <!-- Dropdown Cart Items Start -->
+                  <div class="cart-items">
+                    <!-- Single Cart Item Start -->
+                    <div class="single-cart-item">
+                      <div class="item-image">
+                        <img src="assets/images/cart/cart-1.jpg" alt="cart" />
+                      </div>
+                      <div class="item-content">
+                        <h4 class="title">
+                          <a href="pricing.html">Apple Iphone X</a>
+                        </h4>
+                        <span class="quantity">2 x $59.99</span>
+                      </div>
+                      <button class="btn-close"></button>
                     </div>
-                    
-
-                    <div class="header-menu d-none d-lg-block">
-                        <ul class="main-menu">
-                            <li class="active-menu">
-                                <a href="index.html">Home</a>
-                                
-                            </li>
-                            <li>
-                                <a href="#">About Us</a>
-                            </li>
-
-                            <li>
-                                <a href="rules.html">Rules</a>
-                            </li>
-
-                          
-                            <li>
-                                <a href="#">Brochure</a>
-                            </li>
-
-                            <li>
-                                <a href="team.html">Our Team</a>
-                            </li>
-                           
-                           
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
+                    <!-- Single Cart Item End -->
+                    <!-- Single Cart Item Start -->
+                    <div class="single-cart-item">
+                      <div class="item-image">
+                        <img src="assets/images/cart/cart-2.jpg" alt="cart" />
+                      </div>
+                      <div class="item-content">
+                        <h4 class="title">
+                          <a href="pricing.html">Sony Xperia Tablet</a>
+                        </h4>
+                        <span class="quantity">2 x $59.99</span>
+                      </div>
+                      <button class="btn-close"></button>
                     </div>
-
-                    <!-- Header Meta Start -->
-                    <div class="header-meta">
-                        <!-- Header Search Start -->
-                  
-                        <!-- Header Search End -->
-                        <!-- Header Cart Start -->
-                        <div class="header-cart dropdown">
-                            
-                            <!-- Header Dropdown Cart Start -->
-                            <div class="dropdown-menu dropdown-cart slideIn">
-                                <!-- Dropdown Cart Items Start -->
-                                <div class="cart-items">
-                                    <!-- Single Cart Item Start -->
-                                    <div class="single-cart-item">
-                                        <div class="item-image">
-                                            <img src="assets/images/cart/cart-1.jpg" alt="cart">
-                                        </div>
-                                        <div class="item-content">
-                                            <h4 class="title"><a href="pricing.html">Apple Iphone X</a></h4>
-                                            <span class="quantity">2 x $59.99</span>
-                                        </div>
-                                        <button class="btn-close"></button>
-                                    </div>
-                                    <!-- Single Cart Item End -->
-                                    <!-- Single Cart Item Start -->
-                                    <div class="single-cart-item">
-                                        <div class="item-image">
-                                            <img src="assets/images/cart/cart-2.jpg" alt="cart">
-                                        </div>
-                                        <div class="item-content">
-                                            <h4 class="title"><a href="pricing.html">Sony Xperia Tablet</a></h4>
-                                            <span class="quantity">2 x $59.99</span>
-                                        </div>
-                                        <button class="btn-close"></button>
-                                    </div>
-                                    <!-- Single Cart Item End -->
-                                    <!-- Single Cart Item Start -->
-                                    <div class="single-cart-item">
-                                        <div class="item-image">
-                                            <img src="assets/images/cart/cart-3.jpg" alt="cart">
-                                        </div>
-                                        <div class="item-content">
-                                            <h4 class="title"><a href="pricing.html">Camera Digital</a></h4>
-                                            <span class="quantity">2 x $59.99</span>
-                                        </div>
-                                        <button class="btn-close"></button>
-                                    </div>
-                                    <!-- Single Cart Item End -->
-                                </div>
-                                <!-- Dropdown Cart Items End -->
-                                <!-- Dropdown Cart Total Start -->
-                                <div class="cart-total">
-                                    <span class="label">Subtotal:</span>
-                                    <span class="value">$99.9</span>
-                                </div>
-                                <!-- Dropdown Cart Total End -->
-                                <!-- Dropdown Cart Button Start -->
-                                <div class="cart-btns">
-                                    <a class="btn" href="pricing.html">View Cart</a>
-                                    <a class="btn btn-2" href="pricing.html">Checkout</a>
-                                </div>
-                                <!-- Dropdown Cart Button End -->
-                            </div>
-                            <!-- Header Dropdown Cart End -->
-                        </div>
-                        <!-- Header Cart End -->
-
-                        <div class="header-btn d-none d-xl-block">
-                            <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeQyvc78vtEu_vfAR5BpL9XmMH8Plvt0AuE6YsRdyAivNUr9g/viewform" target="_blank">Register Now</a>
-                        </div>
-                        <!-- Header Toggle Start -->
-                        <div class="header-toggle d-lg-none">
-                            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
-                        <!-- Header Toggle End -->
+                    <!-- Single Cart Item End -->
+                    <!-- Single Cart Item Start -->
+                    <div class="single-cart-item">
+                      <div class="item-image">
+                        <img src="assets/images/cart/cart-3.jpg" alt="cart" />
+                      </div>
+                      <div class="item-content">
+                        <h4 class="title">
+                          <a href="pricing.html">Camera Digital</a>
+                        </h4>
+                        <span class="quantity">2 x $59.99</span>
+                      </div>
+                      <button class="btn-close"></button>
                     </div>
-                    <!-- Header Meta End  -->
-
+                    <!-- Single Cart Item End -->
+                  </div>
+                  <!-- Dropdown Cart Items End -->
+                  <!-- Dropdown Cart Total Start -->
+                  <div class="cart-total">
+                    <span class="label">Subtotal:</span>
+                    <span class="value">$99.9</span>
+                  </div>
+                  <!-- Dropdown Cart Total End -->
+                  <!-- Dropdown Cart Button Start -->
+                  <div class="cart-btns">
+                    <a class="btn" href="pricing.html">View Cart</a>
+                    <a class="btn btn-2" href="pricing.html">Checkout</a>
+                  </div>
+                  <!-- Dropdown Cart Button End -->
                 </div>
-                <!-- Header Wrap End  -->
+                <!-- Header Dropdown Cart End -->
+              </div>
+              <!-- Header Cart End -->
 
+              <div class="header-btn d-none d-xl-block">
+                <a
+                  class="btn"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeQyvc78vtEu_vfAR5BpL9XmMH8Plvt0AuE6YsRdyAivNUr9g/viewform"
+                  target="_blank"
+                  >Register Now</a
+                >
+              </div>
+              <!-- Header Toggle Start -->
+              <div class="header-toggle d-lg-none">
+                <button
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <!-- Header Toggle End -->
             </div>
+            <!-- Header Meta End  -->
+          </div>
+          <!-- Header Wrap End  -->
         </div>
-        <!-- Header End -->
+      </div>
+      <!-- Header End -->
 
-        <!-- Offcanvas Start-->
-        <div class="offcanvas offcanvas-start" id="offcanvasExample">
+      <!-- Offcanvas Start-->
+      <div class="offcanvas offcanvas-start" id="offcanvasExample">
         <div class="offcanvas-header">
-            <!-- Offcanvas Logo Start -->
-            <div class="offcanvas-logo">
-                <a href="index.html"><img src="assets/images/logo/innoverse.png" alt=""></a>
-            </div>
-            <!-- Offcanvas Logo End -->
-            <button type="button" class="close-btn" data-bs-dismiss="offcanvas"><i class="flaticon-close"></i></button>
+          <!-- Offcanvas Logo Start -->
+          <div class="offcanvas-logo">
+            <a href="index.html"
+              ><img src="assets/images/logo/innoverse.png" alt=""
+            /></a>
+          </div>
+          <!-- Offcanvas Logo End -->
+          <button type="button" class="close-btn" data-bs-dismiss="offcanvas">
+            <i class="flaticon-close"></i>
+          </button>
         </div>
 
         <!-- Offcanvas Body Start -->
         <div class="offcanvas-body">
-            <div class="offcanvas-menu">
-                <ul class="main-menu">
-                    <li class="active-menu">
-                        <a href="index.html">Home</a>
-                        
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
+          <div class="offcanvas-menu">
+            <ul class="main-menu">
+              <li class="active-menu">
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
 
-                    <li>
-                        <a href="rules.html">Rules</a>
-                    </li>
+              <li>
+                <a href="rules.html">Rules</a>
+              </li>
 
-                  
-                    <li>
-                        <a href="#">Brochure</a>
-                    </li>
+              <li>
+                <a href="#">Brochure</a>
+              </li>
 
-                    <li>
-                        <a href="team.html">Our Team</a>
-                    </li>
-                   
-                   
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
+              <li>
+                <a href="team.html">Our Team</a>
+              </li>
+
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
         <!-- Offcanvas Body End -->
-    </div>
-        <!-- Offcanvas End -->
+      </div>
+      <!-- Offcanvas End -->
 
+      <!-- Hero Start -->
+      <div
+        class="section exvent-hero-section d-lg-flex d-block align-items-center inner-page-hero"
+        style="background-image: url(assets/images/bg/about_page_bg.jpg)"
+      >
+        <img
+          class="shape-1 img-fluid"
+          src="assets/images/shape/hero_shape1.png"
+          alt=""
+        />
+        <img
+          class="shape-2 img-fluid"
+          src="assets/images/shape/hero_shape2.png"
+          alt=""
+        />
 
-        <!-- Hero Start -->
-        <div class="section exvent-hero-section d-lg-flex d-block align-items-center inner-page-hero" style="background-image: url(assets/images/bg/about_page_bg.jpg);">
-            <img class="shape-1 img-fluid" src="assets/images/shape/hero_shape1.png" alt="">
-            <img class="shape-2 img-fluid" src="assets/images/shape/hero_shape2.png" alt="">
-
-            <div class="container">
-                <div class="row exvent-hero-row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <div class="page-title">
-                            <h2 class="section-title">Rules & Regulations</h2>
-                        </div>
-                        <div class="page-navigation">
-                         
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+          <div class="row exvent-hero-row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div class="page-title">
+                <h2 class="section-title">Rules & Regulations</h2>
+              </div>
+              <div class="page-navigation">
+              
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Hero End -->
+      </div>
+      <!-- Hero End -->
 
-        <!-- Blog List Page Start -->
-        <div class="blog-list-page section-padding-04">
-            <div class="container">
-                <div class="row justify-content-between gx-5">
-                    <div class="col-lg-8">
-                        <div class="single-blog">
-                            <div class="blog-header">
-                                <div class="blog-thumbnail">
-                                    <a href="#" class="">
-                                        <img src="assets/images/blog_img_1.jpg" alt="Blog Image" class="blog-img">
-                                    </a>
-                                </div>
-                                <h5 class="blog-event-date">
-                                    <span class="month bg-orange">Aug</span>
-                                    <span class="year">2022</span>
-                                </h5>
-                            </div>
-                            <div class="blog-body">
-                                <div class="blog-details">
-                                    <a href="#" class="author"><span><i class="far fa-user"></i></span> Adam Hirachin</a>
-                                    <a href="#" class="comment"><span><i class="far fa-calendar-alt"></i></span> 3 comments</a>
-                                </div>
-                                <a href="blog-details.html">
-                                    <h4 class="blog-title">Paris blockchain summit new slogan</h4>
-                                </a>
-                                <p class="blog-content">We’re inviting the top creatives in the tech industry from all over the world to come learn, grow, scrape their knees, especially for the companies scaling out their sales operations. That’s why Attentive was born in 2015.</p>
-                            </div>
-                        </div>
-                        <div class="single-blog">
-                            <div class="blog-header">
-                                <div class="blog-thumbnail">
-                                    <a href="#" class="">
-                                        <img src="assets/images/blog_img_2.jpg" alt="Blog Image" class="blog-img">
-                                    </a>
-                                </div>
-                                <h5 class="blog-event-date">
-                                    <span class="month bg-pink">Aug</span>
-                                    <span class="year">2022</span>
-                                </h5>
-                            </div>
-                            <div class="blog-body">
-                                <div class="blog-details">
-                                    <a href="#" class="author"><span><i class="far fa-user"></i></span> Adam Hirachin</a>
-                                    <a href="#" class="comment"><span><i class="far fa-calendar-alt"></i></span> 3 comments</a>
-                                </div>
-                                <a href="blog-details.html">
-                                    <h4 class="blog-title">Paris blockchain summit new slogan</h4>
-                                </a>
-                                <p class="blog-content">We’re inviting the top creatives in the tech industry from all over the world to come learn, grow, scrape their knees, especially for the companies scaling out their sales operations. That’s why Attentive was born in 2015.</p>
-                            </div>
-                        </div>
-                        <div class="single-blog">
-                            <div class="blog-header">
-                                <div class="blog-thumbnail">
-                                    <a href="#" class="">
-                                        <img src="assets/images/blog_img_3.jpg" alt="Blog Image" class="blog-img">
-                                    </a>
-                                </div>
-                                <h5 class="blog-event-date">
-                                    <span class="month bg-blue">Aug</span>
-                                    <span class="year">2022</span>
-                                </h5>
-                            </div>
-                            <div class="blog-body">
-                                <div class="blog-details">
-                                    <a href="#" class="author"><span><i class="far fa-user"></i></span> Adam Hirachin</a>
-                                    <a href="#" class="comment"><span><i class="far fa-calendar-alt"></i></span> 3 comments</a>
-                                </div>
-                                <a href="blog-details.html">
-                                    <h4 class="blog-title">Paris blockchain summit new slogan</h4>
-                                </a>
-                                <p class="blog-content">We’re inviting the top creatives in the tech industry from all over the world to come learn, grow, scrape their knees, especially for the companies scaling out their sales operations. That’s why Attentive was born in 2015.</p>
-                            </div>
-                        </div>
-                        <!-- Pagination Start  -->
-                        <div class="blog-pagination">
-                            <nav>
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item">
-                                        <a class="page-link arrow" href="#">
-                                            <i class="fas fa-angle-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link active" href="#">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link arrow" href="#">
-                                            <i class="fas fa-angle-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-
-                        </div>
-                        <!-- Pagination End  -->
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="exvent-sidebar">
-                            <div class="sidebar-widget sidebar-widget-no-margin">
-                                <form class="search-form" action="#">
-                                    <input type="text" placeholder="Search">
-                                    <button type="submit"><i class="fas fa-search"></i></button>
-                                </form>
-                            </div>
-                            <div class="sidebar-widget">
-                                <div class="widget-title">
-                                    <h4>Categories</h4>
-                                </div>
-                                <ul class="category">
-                                    <li class="category-item">
-                                        <a href="#">
-                                            <i class="flaticon-next"></i> Industry <span class="post-count">(11)</span>
-                                        </a>
-                                    </li>
-                                    <li class="category-item">
-                                        <a href="#">
-                                            <i class="flaticon-next"></i> Business <span class="post-count">(02)</span>
-                                        </a>
-                                    </li>
-                                    <li class="category-item">
-                                        <a href="#">
-                                            <i class="flaticon-next"></i> Construction <span class="post-count">(0)</span>
-                                        </a>
-                                    </li>
-                                    <li class="category-item">
-                                        <a href="#">
-                                            <i class="flaticon-next"></i> Factory <span class="post-count">(231)</span>
-                                        </a>
-                                    </li>
-                                    <li class="category-item">
-                                        <a href="#">
-                                            <i class="flaticon-next"></i> Estate <span class="post-count">(45)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="sidebar-widget">
-                                <div class="sidebar-offer" style="background-image: url(assets/images/bg/sidebar_ad_bg.jpg);">
-                                    <h3 class="offer">40% off</h3>
-                                    <h3 class="offer-title">Book your seat now</h3>
-                                    <a href="#" class="btn btn-orange">Get ticket now</a>
-                                </div>
-                            </div>
-                            <div class="sidebar-widget">
-                                <div class="widget-title">
-                                    <h4>Popular Posts</h4>
-                                </div>
-                                <div class="popular-posts">
-                                    <ul>
-                                        <li>
-                                            <a class="post-link" href="#">
-                                                <div class="post-thumb">
-                                                    <img src="assets/images/thumbnails/r-post-1.jpg" alt="">
-                                                </div>
-                                                <div class="post-text">
-                                                    <h4 class="title">Cupidatat non proident sunt culpa officia</h4>
-                                                    <span class="post-meta"><i class="far fa-calendar-alt"></i>  Oct 09, 2021</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="post-link" href="#">
-                                                <div class="post-thumb">
-                                                    <img src="assets/images/thumbnails/r-post-2.jpg" alt="">
-                                                </div>
-                                                <div class="post-text">
-                                                    <h4 class="title">Cupidatat non proident sunt culpa officia</h4>
-                                                    <span class="post-meta"><i class="far fa-calendar-alt"></i>  Oct 09, 2021</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="post-link" href="#">
-                                                <div class="post-thumb">
-                                                    <img src="assets/images/thumbnails/r-post-3.jpg" alt="">
-                                                </div>
-                                                <div class="post-text">
-                                                    <h4 class="title">Cupidatat non proident sunt culpa officia</h4>
-                                                    <span class="post-meta"><i class="far fa-calendar-alt"></i>  Oct 09, 2021</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <!-- FAQ Area Start -->
+      <div class="faq-area section-padding-06">
+        <img
+          src="assets/images/bg/map_bg.png"
+          alt="Map BG"
+          class="bg-map img-fluid"
+        />
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="section-title-wrap">
+                <div class="section-title text-center">
+                  <h2 class="title">Rules & Regulations</h2>
                 </div>
+              </div>
             </div>
+            <div class="col-md-8">
+              <div class="accordion accordion-flush" id="faq_accordion">
+                <div class="accordion-item">
+                  <div class="section-title text-center">
+                    <h4 class="sub-title">Guidelines For Teams</h4>
+                  </div>
+                  <br />
+                  <div>
+                    <strong>
+                      <p class="sub-menu">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> A typical team
+                          comprises of 3 members</span
+                        >
+                      </p>
+                      <p class="sub-menu">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Every student
+                          must have their college identity card as their
+                          identification proof</span
+                        >
+                      </p>
+                      <p class="sub-menu">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i>Intercollege
+                          grouping for a team is not allowed</span
+                        >
+                      </p>
+                      <p class="sub-menu">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Participants
+                          must wear their identity card given by the hackathon
+                          community in the college premises</span
+                        >
+                      </p>
+                      <p class="sub-menu">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Participants
+                          must stay within the college premises and should
+                          occupy the places that are assigned to them</span
+                        >
+                      </p>
+                    </strong>
+                  </div>
+                </div>
+                <br />
+                <div class="accordion-item">
+                  <div class="section-title text-center">
+                    <h4 class="sub-title">HACKATHON THEME</h4>
+                    <div style="margin-top: 15px"></div>
+                    <strong>
+                      <p class="sub-menu" style="text-align: left;">
+                        <span><i class="fa fa-bookmark"></i> Blockchain</span>
+                      </p>
+                      <p class="sub-menu" style="text-align: left;">
+                        <span
+                          ><i class="fa fa-bookmark"></i> Cyber Security
+                        </span>
+                      </p>
+                      <p class="sub-menu" style="text-align: left;">
+                        <span><i class="fa fa-bookmark"></i>AI & ML</span>
+                      </p>
+                      <p class="sub-menu" style="text-align: left;">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Teams must
+                          submit their project work on the above-mentioned theme
+                          only.</span
+                        >
+                      </p>
+                      <p class="sub-menu" style="text-align: left;">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> No
+                          plagiarism/copy-paste will be entertained, if found
+                          the teams will directly be disqualified from the
+                          hackathon</span
+                        >
+                      </p>
+                    </strong>
+                  </div>
+
+                  <div></div>
+                  <br />
+                </div>
+                <div class="accordion-item">
+                  <div class="section-title text-center">
+                    <h4 class="sub-title">EVALUATION CRITERIA</h4>
+                    <div style="margin-top: 15px"></div>
+                    <strong>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Initial
+                          Review: After 3 hours into the hackathon, a team of
+                          judges will conduct a preliminary review of all
+                          participating teams. Teams will have to present their
+                          ideas, explain their problem statement, and present
+                          their progress till that point. Based on this review,
+                          marks will be allocated in each criteria mentioned.
+                        </span>
+                      </p>
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Second Review:
+                          At the end of the 9 hours, the teams will have to
+                          present their complete solutions to a panel of judges.
+                          The teams will be evaluated based on their creativity,
+                          technicality, feasibility, and impact
+                        </span>
+                      </p>
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Third Review:
+                          The solution will be submitted for review, where
+                          judges will suggest changes. All suggestions will be
+                          consolidated, and will assign marks to them. Top 5
+                          teams will be selected for Final presentation
+                        </span>
+                      </p>
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Final Review:
+                          The top 5 teams will be selected for the final
+                          presentation, where they will have the opportunity to
+                          present their solution in front of audience. The final
+                          presentation will be followed by a Q&A session, where
+                          the teams can answer questions from the judges and the
+                          audience.
+                        </span>
+                      </p>
+                    </strong>
+                  </div>
+                </div>
+                <div style="margin-top: 25px"></div>
+                <div class="accordion-item">
+                  <div class="section-title text-center">
+                    <h4 class="sub-title">TEAM SUBMISSION GUIDELINES</h4>
+                    <div style="margin-top: 15px"></div>
+                    <strong>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Hackathon
+                          Dates: The hackathon is scheduled to take place from
+                          22nd March 2024 to 23rd March 2024, spanning a period
+                          of two days.
+                        </span>
+                      </p>
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Registration
+                          Requirement: In order to participate in the hackathon,
+                          teams must first register for the Innoverse Hackathon
+                          2024 through the official Hackathon website. Only
+                          registered teams will be eligible to submit their
+                          projects. Teams that fail to register will not be
+                          entertained and will not be able to participate.
+                        </span>
+                      </p>
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Submission
+                          Process: Once the problem statements are released
+                          registered teams will be provided with a submission
+                          form link, through which they must submit their
+                          projects. The submission form will require teams to
+                          upload their presentation (PPT) and any other
+                          necessary files related to their project. It is
+                          mandatory for teams to submit their projects through
+                          this form.
+                        </span>
+                        <div style="margin-top: 10px"></div>
+                        <strong>
+                        <p style="text-align: left; color: red;">Note:Problem statements will be released 24 hours prior to the event. And it is mandatory to finish the submission process within the 12 hours once the problem statements are released.</p>
+                    </strong> 
+                    </p>
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Team Leader: Each team must appoint a team leader, who will be responsible for registering the team and submitting the project on behalf of all team members. The team leader will serve as the primary point of contact for the organizers.
+                        </span>
+                      </p>
+
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Submission Contents: Teams are required to submit a detailed PPT outlining their idea and project. The PPT should provide a clear and concise explanation of the project, including its purpose, functionality, and any innovative features or technologies used.
+                        </span>
+                      </p>
+
+
+
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Format Requirements: All details submitted must adhere to the prescribed format provided by the organizers. Failure to comply with the format requirements may result in the rejection of the submission.
+                        </span>
+                      </p>
+
+
+
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Hackathon Start: The hackathon will commence immediately after the introductory sessions, which will provide participants with an overview of the event, the rules, and the judging criteria.
+                        </span>
+                      </p>
+
+
+
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Disqualification: Teams that fail to submit their projects by the specified deadline will be automatically disqualified from the hackathon. It is essential for teams to ensure that they submit their projects on time to avoid disqualification.
+                        </span>
+                      </p>
+
+                      <div style="margin-top: 15px"></div>
+                      <p class="sub-menu" style="text-align: left">
+                        <span
+                          ><i class="fa fa-hand-point-right"></i> Originality: While teams are allowed to use previously implemented hackathons as a basis for their projects, extra points will be awarded for original and innovative projects. Teams are encouraged to think creatively and come up with unique ideas that showcase their skills and creativity.
+                        </span>
+                      </p>
+                    </strong>
+                  </div>
+                </div>
+                <div style="margin-top: 15px"></div>
+
+
+                <div class="accordion-item">
+                    <div class="section-title text-center">
+                      <h4 class="sub-title">GENERAL HACKATHON RULES</h4>
+                      <div style="margin-top: 15px"></div>
+                      <strong>
+                        <p class="sub-menu" style="text-align: left;">
+                          <span><i class="fa fa-bookmark"></i>  All work on a project should be done during the Hackathon. Your code repository must be initialized at the beginning of Hackathon itself. </span>
+                        </p>
+                        <div style="margin-top: 15px"></div>
+                        <p class="sub-menu" style="text-align: left;">
+                            <span><i class="fa fa-hand-point-right"></i>  Teams can use libraries, frameworks, or open-source code in their projects. Working on a project before the event and open-sourcing it for the sole purpose of using the code during the event is against the spirit of the rules and is not allowed.  </span>
+                          </p>
+
+
+                          <div style="margin-top: 15px"></div>
+                        <p class="sub-menu" style="text-align: left;">
+                            <span><i class="fa fa-hand-point-right"></i> Teams must stop hacking once the time is up. However, teams are allowed to debug and make small fixes to their programs after time is up.  </span>
+                          </p>
+
+
+
+                          <div style="margin-top: 15px"></div>
+                        <p class="sub-menu" style="text-align: left;">
+                            <span><i class="fa fa-hand-point-right"></i>  Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, breaking the Code of Conduct, or other unsporting behaviour. </span>
+                          </p>
+
+                       
+                        <p class="sub-menu" style="text-align: left;">
+                            <span><i class="fa fa-times" style="color: red; margin-left: 25px;"></i>  Hackathon Judging Criteria and presentation rules will be disclosed an hour before the Hackathon begins.  </span>
+                          </p>
+
+                          <p class="sub-menu" style="text-align: left;" >
+                            <span><i class="fa fa-times" style="color: red; margin-left: 25px;"></i> Valid Bank account details must be provided when asked for the prize money and reimbursements to get <p style="margin-left: 15px;">processed. Regular processing time is applicable for the prize money and reimbursements to get processed.</p>  </span>
+                          </p>
+
+                          <p class="sub-menu" style="text-align: left;">
+                            <span><i class="fa fa-times" style="color: red; margin-left: 25px;"></i>  In case of any discrepancies, the final take shall lie with the organizer.  </span>
+                          </p>
+                       
+                      </strong>
+                    </div>
+  
+                    <div></div>
+                    <br />
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- FAQ Area End -->
 
-        <!-- Blog List Page Start -->
-
-
-        <!-- Footer Section Start -->
-        <div class="footer-section" style="background-image: url(assets/images/bg/footer_bg1.jpg);">
-            <div class="container">
-                <div class="footer-newsletter">
-                    <div class="row">
-                        <div class="col-lg-5 col-12 text-sm-start text-center">
-                            <div class="footer-title">
-                                <span>Subscribe Newsletter</span>
-                                <h4>Subscribe to recieve
-                                    daily news</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-12">
-                            <div class="footer-newsletter-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Your Email">
-                                    <button class="btn btn-primary">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+      <!-- Footer Section Start -->
+      <div
+        class="footer-section"
+        style="background-image: url(assets/images/bg/footer_bg1.jpg)"
+      >
+        <div class="container">
+          <div class="footer-newsletter">
+            <div class="row">
+              <div class="col-lg-5 col-12 text-sm-start text-center">
+                <div class="footer-title">
+                  <span>Subscribe Newsletter</span>
+                  <h4>Subscribe to recieve daily news</h4>
                 </div>
-            </div>
-            <div class="footer-widget-social">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-12">
-                            <div class="social-title">
-                                <h4 class="title">Connect With us</h4>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <ul class="social-list">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="https://www.instagram.com/innoverse_git_mca/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-lg-7 col-12">
+                <div class="footer-newsletter-form">
+                  <form action="#">
+                    <input type="text" placeholder="Your Email" />
+                    <button class="btn btn-primary">Subscribe</button>
+                  </form>
                 </div>
+              </div>
             </div>
-            <div class="footer-widget-navigation text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="footer-navigation">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="blog-details.html">Sponsors</a></li>
-                                    <li><a href="event-schedule.html">Schedule</a></li>
-                                    <li><a href="blog-details.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer Copyright Start -->
-            <div class="footer-copyright-area">
-                <div class="container">
-                    <div class="footer-copyright-wrap">
-                        <div class="row align-items-center">
-                            <div class="col-lg-12">
-                                <!-- Footer Copyright Text Start -->
-                                <div class="copyright-text text-center">
-                                    <p>2024 Copyright Innoverse Designed by Alzaahid . All Rights Reserved</p>
-                                </div>
-                                <!-- Footer Copyright Text End -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Footer Copyright End -->
+          </div>
         </div>
-        <!-- Footer Section End -->
-
-        <!-- back to top start -->
-        <div class="progress-wrap">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-            </svg>
+        <div class="footer-widget-social">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-12">
+                <div class="social-title">
+                  <h4 class="title">Connect With us</h4>
+                </div>
+              </div>
+              <div class="col-12">
+                <ul class="social-list">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/innoverse_git_mca/"
+                        target="_blank"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- back to top end -->
+        
 
+        <!-- Footer Copyright Start -->
+        <div class="footer-copyright-area">
+          <div class="container">
+            <div class="footer-copyright-wrap">
+              <div class="row align-items-center">
+                <div class="col-lg-12">
+                  <!-- Footer Copyright Text Start -->
+                  <div class="copyright-text text-center">
+                    <p>
+                      2024 Copyright Innoverse Designed by Alzaahid . All Rights
+                      Reserved
+                    </p>
+                  </div>
+                  <!-- Footer Copyright Text End -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Copyright End -->
+      </div>
+      <!-- Footer Section End -->
+
+      <!-- back to top start -->
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+      <!-- back to top end -->
     </div>
 
     <!-- JS
@@ -555,13 +736,9 @@
     <script src="assets/js/plugins/lightbox.min.js"></script>
     <script src="assets/js/plugins/gijgo.min.js"></script>
 
-
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
-
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

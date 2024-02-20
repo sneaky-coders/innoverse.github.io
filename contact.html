@@ -56,6 +56,36 @@
          ::-webkit-scrollbar-thumb:hover {
              background: #555;
          }
+
+         #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Background color for preloader */
+    z-index: 9999; /* Ensure preloader is on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the preloader image */
+.preloader img {
+    width: 100px; /* Adjust the size of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: pulse 1.5s ease-in-out infinite alternate; /* Apply the pulse animation */
+}
+
+/* Keyframe animation for the pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
      </style>
 </head>
 
@@ -67,10 +97,9 @@
         <!-- Preloader start -->
         <div id="preloader">
             <div class="preloader">
-                <span></span>
-                <span></span>
+              <img src="assets/images/logo/innoverse2.png" alt="Loading..." />
             </div>
-        </div>
+          </div>
         <!-- Preloader End -->
 
         <!-- Header Start  -->
@@ -182,7 +211,7 @@
                         <!-- Header Cart End -->
 
                         <div class="header-btn d-none d-xl-block">
-                            <a class="btn" href="#">Register Now</a>
+                            <a class="btn"  href="https://docs.google.com/forms/d/e/1FAIpQLSeQyvc78vtEu_vfAR5BpL9XmMH8Plvt0AuE6YsRdyAivNUr9g/viewform">Register Now</a>
                         </div>
                         <!-- Header Toggle Start -->
                         <div class="header-toggle d-lg-none">
@@ -208,12 +237,12 @@
             <div class="offcanvas-header">
                 <!-- Offcanvas Logo Start -->
                 <div class="offcanvas-logo">
-                    <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                    <a href="index.html"><img src="assets/images/logo/innoverse2.png" alt=""></a>
                 </div>
                 <!-- Offcanvas Logo End -->
                 <button type="button" class="close-btn" data-bs-dismiss="offcanvas"><i class="flaticon-close"></i></button>
             </div>
-
+                
             <!-- Offcanvas Body Start -->
             <div class="offcanvas-body">
                 <div class="offcanvas-menu">
@@ -300,7 +329,7 @@
                         </span>
                             <div class="contact-info">
                                 <h4 class="contact-label">Phone</h4>
-                                <a href="tel:+4581236572324" class="address">+91 </a>
+                                <a href="tel:+4581236572324" class="address">+91 6363 358 920</a>
                             </div>
                         </div>
                         <div class="single-contact">
@@ -309,7 +338,7 @@
                         </span>
                             <div class="contact-info">
                                 <h4 class="contact-label">Email :</h4>
-                                <a href="mailto:exvent.hot@gmail.com" class="address">innoverse@gmail.com</a>
+                                <a href="mailto:exvent.hot@gmail.com" class="address">innoverse.kls.git@gmail.com</a>
                             </div>
                         </div>
                     </div>
